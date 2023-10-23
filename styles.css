@@ -1,0 +1,1284 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+
+
+/* Estilo del encabezado tipo Twitter */
+.header {
+  text-align: center;
+  background-color: #ffffff;
+  background-image:url("imgs/pxfuel (1).jpg");
+  background-size: cover;
+  color: #ffffff;
+  padding: 20px;
+  height: 150px;
+  width: 500px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+  top: 2%; 
+}
+
+#profilePic{
+  width: 150px;
+  position: absolute; /* Coloca la foto de perfil en una posición absoluta dentro del encabezado */
+  left: 20px; /* Ajusta la posición izquierda para superponer el banner */
+  top: 130%; /* Centra verticalmente la foto de perfil */
+  transform: translateY(-90%); /* Corrige la alineación vertical */
+  border: 4px solid #000000; /* Borde blanco alrededor de la foto de perfil */
+  border-radius: 50%; /* Forma circular */
+  overflow: hidden; /* Recorta cualquier parte de la foto de perfil que se salga del borde */
+}
+
+#infoTxt{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(128%) translateX(90%);
+}
+
+#bioTxt{
+  color: rgb(177, 175, 175);
+  font-size: 20px;
+  width: 500px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  left: 0;
+}
+
+#usersBox{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  gap: 20px;
+  width: 500px;
+}
+
+#locationTxt{
+  color: rgb(177, 175, 175);
+  font-size: 15px;
+  width: 500px;
+}
+
+#nameTxt{
+  color: rgb(255, 255, 255);
+  margin: 0;
+  width: 500px;
+}
+#userTxt{
+  transform: 100%, 30%;
+  font-size: 18px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.twitter-header img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* Estilo del menú de navegación */
+.menu{
+  height: 150px;
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-38%) translateY(190%);
+  z-index: 2; 
+}
+
+.menu .line {
+  margin-top: 15px;
+  transform: translateX(-5%);
+  height: 1px;
+  background-color: #1DA1F2;
+  width: 85%;
+  margin-bottom: 10px;
+}
+
+.menu ul {
+  width: 500px;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu ul li {
+  display: inline;
+  text-align: center;
+  margin-right: 35px;
+  border-right: 1px solid #1DA1F2; /* Borde a la derecha de los elementos de la lista */
+  padding-right: 35px; /* Espacio entre los elementos y los bordes */
+}
+
+.menu ul li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento de la lista */
+  border-right: none; /* Elimina el borde a la derecha del último elemento de la lista */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #1DA1F2;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* Estilo de las secciones */
+
+#AboutMe{
+  display: block;
+  color: white; 
+  transform: translateX(0%)translateY(37%);
+  text-align: center;
+}
+
+#h2AM{
+  font-size: 40px;
+  color: #1DA1F2 ;
+}
+
+
+#pAM{
+  width: 500px;
+  font-size: 20px;
+  text-align: left;
+  transform: translateX(90%);
+}
+
+#h2EX{
+  font-size: 40px;
+}
+#pEX{
+  width: 500px;
+  font-size: 20px;
+  text-align: left;
+  transform: translateX(90%);
+}
+
+#h2EX{
+  font-size: 40px;
+  color: #1DA1F2 ;
+}
+#h2TEX{
+  font-size: 25px;
+  text-align: left;
+  transform: translateX(31.5%);
+}
+#h2AH{
+  font-size: 40px;
+  color: #1DA1F2 ;
+}
+#pTEX{
+  width: 500px;
+  font-size: 20px;
+  text-align: left;
+  transform: translateX(90%);
+}
+#pEX{
+  width: 500px;
+  font-size: 20px;
+  text-align: left;
+  transform: translateX(-8%);
+}
+
+#proyectos{
+  display: none;
+  color: white; 
+  transform: translateX(0%)translateY(8%);
+  text-align: center;
+}
+
+#h2PJ{
+  font-size: 40px;
+  color: #1DA1F2 ;
+}
+
+#pPJ{
+  width: 500px;
+  font-size: 20px;
+  text-align: left;
+  transform: translateX(90%);
+}
+
+#pPJinfo{
+  color: #979797;
+  width: 500px;
+  font-size: 20px;
+  text-align: left;
+  transform: translateX(90%);
+}
+
+#DuskWorldSection{
+  display: flex;
+  align-items: center;
+}
+
+#DuskWorldIcon{
+  transform: translateX(448%);
+  width: 100px;
+  margin-right: 0px;
+}
+
+#DuskWorldSS{
+  margin-top: 20px;
+  width: 450px;
+  height: 340px;
+  transform: translateX(-5%);
+}
+
+#h2P1{
+  font-size: 30px;
+  transform: translateX(315%);
+}
+
+#DuskWorldLinks{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  transform: translateX(34%);
+}
+
+#gameplayLink1:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+#repoLinkDW:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#gameplayLink1 {
+  width: 150px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  background-color: white;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-top: 0;
+}
+a:visited {
+  color: #000000; /* Cambia el color a tu preferencia, por ejemplo, el azul original */
+}
+
+#repoLinkDW{
+  width: 150px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  background-color: white;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-top: 0;
+  margin-left: 40px;
+  text-align: center;
+}
+
+
+#ShadowBankSection{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#ShadowBankIcon{
+  transform: translateX(420%);
+  width: 105px;
+  height: 100px;
+  margin-right: 0px;
+}
+#ShadowBankSS{
+  margin-top: 20px;
+  width: 450px;
+  height: 300px;
+  transform: translateX(-6%);
+}
+
+#h2P2{
+  font-size: 30px;
+  transform: translateX(265%);
+}
+
+#ShadowBankLinks{
+  height: 65px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  transform: translateX(33%);
+}
+#gameplayLink2{
+  width: 160px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  transition: background-color 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transform: translateX(0%);
+}
+
+#websiteSBS{
+  width: 150px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  border: 1px solid #ffffff;
+  margin-left: 40px;
+  transform: translateX(0%);
+  margin-top: 0%;
+}
+#gameplayLink2:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+#websiteSBS:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#AuraSection{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#TAPIcon{
+  transform: translateX(448%);
+  width: 100px;
+  margin-right: 0px;
+}
+
+#TAPSS{
+  margin-top: 20px;
+  width: 500px;
+  height: 330px;
+  transform: translateX(-5%);
+}
+
+#h2P3{
+  font-size: 30px;
+  transform: translateX(205%);
+}
+
+#AuraLinks{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  transform: translateX(34%);
+}
+
+#auraPLink:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#repoLinkAura:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#auraPLink{
+  width: 150px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-top: 0;
+}
+
+#repoLinkAura{
+  width: 150px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-top: 0;
+  margin-left: 40px;
+  text-align: center;
+}
+
+#ARSection{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#ARIcon{
+  transform: translateX(448%);
+  width: 100px;
+  margin-right: 0px;
+}
+
+#h2P4{
+  font-size: 30px;
+  transform: translateX(135%);
+}
+
+#ARSS{
+  margin-top: 20px;
+  width: 460px;
+  height: 350px;
+  transform: translateX(-5%);
+}
+
+#ARlinks{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  transform: translateX(34%);
+}
+
+#feidLink{
+  width: 400px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-top: 0;
+}
+
+#feidLink:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#URSection{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#h2P5{
+  font-size: 30px;
+  text-align: left;
+  transform: translateX(275%);
+}
+
+#URIcon{
+  transform: translateX(448%);
+  width: 100px;
+  margin-right: 0px;
+}
+
+#URSS{
+  margin-top: 20px;
+  width: 450px;
+  height: 340px;
+  transform: translateX(-5%);
+}
+
+#URLinks{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  transform: translateX(34%);
+}
+
+#gameplayLink5:visited {
+  color: #000000; 
+}
+#gameplayLink5:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#repoLinkUR:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#gameplayLink5{
+  width: 150px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-top: 0;
+}
+
+#repoLinkUR{
+  width: 150px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-top: 0;
+  margin-left: 40px;
+  text-align: center;
+}
+
+#h2MS{
+  font-size: 40px;
+  color: #1DA1F2;
+  transform: translateX(45%)translateY(700%);
+}
+
+#Skills{
+  display: none;
+  color: white;
+}
+
+#MySkills{
+  transform: translateX(34%)translateY(38%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.progress-info {
+  display: flex;
+  align-items: center;
+}
+
+.SKPorcentaje {
+  font-size: 20px;
+  color: #1DA1F2;
+  margin-right: 10px; /* Añade un poco de espacio entre el porcentaje y la barra de progreso */
+}
+
+.skill {
+  display: flex;
+  flex-direction: column; /* Apila los elementos uno encima del otro */
+  margin-bottom: 20px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px; /* Espacio entre el título y el porcentaje */
+}
+
+.SKTittle {
+  font-size: 25px;
+  color: #ffffff;
+  margin: 0; /* Elimina el margen para alinear a la izquierda */
+}
+
+.progress-bar {
+  background-color: #ffffff;
+  height: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  flex-grow: 1;
+  width: 400px;
+  margin-left: 10px;
+}
+
+.progress {
+  background-color: #1DA1F2;
+  height: 100%;
+  width: 50%;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 5px;
+  color: #ffffff;
+}
+
+.progress-bar {
+  margin-top: 10px;
+}
+
+.progress {
+  line-height: 15px;
+}
+
+
+
+.proyecto {
+  display: none;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.proyecto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.trabajo {
+  margin-bottom: 20px;
+}
+
+
+#Contact{
+  width: 450px;
+  display: none;
+  transform: translateX(135%)translateY(200%);
+}
+
+#h2CM{
+  font-size: 40px;
+  color: #1DA1F2;
+}
+#pCM{
+  transform: translateX(-10%);
+  color: white;
+}
+
+#TextCM{
+  transform: translateX(4%);
+}
+
+#mailto{
+  transform: translateY(40%);
+  text-align: center;
+  width: 150px;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #000000;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-top: 0;
+}
+
+#mailto:visited {
+  color: #000000; 
+}
+#mailto:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
+/* Estilo del pie de página */
+#footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  bottom: 0;
+  transform: translateX(93%)translateY(800%);
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .body{
+    overflow-x: hidden;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: #1DA1F2;
+    color: #ffffff;
+    padding: 20px;
+    height: 250px;
+    transform: translateX(0);
+    position: absolute;
+    left: 0; 
+    top: 0; 
+  }
+
+  #infoTxt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    transform: translateY(175%)translateX(3%);
+  }
+  
+
+  #nameTxt{
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 1%;
+  }
+
+  #userTxt{
+    font-size: 20px;
+  }
+
+  #bioTxt{
+    color: rgb(177, 175, 175);
+    font-size: 20px;
+    margin-bottom: 1%;
+  }
+
+  #profilePic{
+    left: 20px;
+  }
+
+  #locationTxt{
+    font-size: 20px;
+  }
+
+  .menu{
+    width: 100%;
+    font-size: 20px;
+    left: 0;
+    transform: translateX(7%)translateY(260%);
+  }
+
+  .menu .line {
+    margin-top: 15px;
+    transform: translateX(-2%);
+    height: 1px;
+    background-color: #1DA1F2;
+    width: 500px;
+    margin-bottom: 10px;
+  }
+
+  .menu ul li {
+    display: inline;
+    text-align: center;
+    margin-right: 20px;
+    border-right: 1px solid #1DA1F2; /* Borde a la derecha de los elementos de la lista */
+    padding-right: 20px; /* Espacio entre los elementos y los bordes */
+  }
+
+  #AboutMe{
+    color: white; 
+    transform: translateX(15%)translateY(45%);
+    text-align: center;
+  }
+
+  #h2AM{
+    font-size: 40px;
+    transform: translateX(-38%);
+    color: #1DA1F2 ;
+  }
+
+  #h2MS{
+    font-size: 40px;
+    transform: translateX(18%)translateY(930%);
+    color: #1DA1F2 ;
+  }
+
+  #Skills{
+    color: white; 
+    text-align: left;
+    transform: translateX(3%)translateY(0%);
+    text-align: center;
+    height: 1000px;
+    z-index: 0;
+  }
+
+  #MySkills{
+    text-align: left;
+    transform: translateX(5%)translateY(50%);
+  }
+
+  #pAM{
+    width: 500px;
+    font-size: 20px;
+    text-align: left;
+    transform: translateX(-8%);
+  }
+
+  #AMSection, #proyectos {
+    display: none;
+  }
+
+  #h2EX{
+    font-size: 40px;
+    color: #1DA1F2 ;
+    transform: translateX(-35%);
+  }
+  #h2TEX{
+    font-size: 25px;
+    text-align: left;
+    transform: translateX(-11%);
+  }
+  #h2AH{
+    font-size: 40px;
+    text-align: left;
+    color: #1DA1F2 ;
+    transform: translateX(-11%);
+  }
+  #pTEX{
+    width: 500px;
+    font-size: 20px;
+    text-align: left;
+    transform: translateX(-8%);
+  }
+  #pEX{
+    width: 500px;
+    font-size: 20px;
+    text-align: left;
+    transform: translateX(-8%);
+  }
+
+  #proyectos{
+    color: white; 
+    transform: translateX(15%)translateY(10.5%);
+    text-align: center;
+  }
+
+  #DuskWorldSection{
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+  }
+
+  #DuskWorldIcon{
+    transform: translateX(-40%);
+    width: 100px;
+    margin-right: 0px;
+  }
+
+  #DuskWorldSS{
+    margin-top: 20px;
+    width: 450px;
+    height: 345px;
+    transform: translateX(-4%);
+  }
+
+  #DuskWorldLinks{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(5%);
+  }
+
+  #pGameplay1:visited {
+    color: #000000; 
+  }
+  #pGameplay1:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  #pRepoDW:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  #pGameplay1{
+    width: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-top: 0;
+  }
+
+  #pRepoDW{
+    width: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-top: 0;
+    margin-left: 40px;
+    text-align: center;
+  }
+
+ 
+  #ShadowBankSection{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+  }
+
+  #h2P2{
+    font-size: 30px;
+    transform: translateX(-10%);
+  }
+
+  #ShadowBankIcon{
+    transform: translateX(-40%);
+    width: 105px;
+    height: 100px;
+    margin-right: 0px;
+  }
+
+  #ShadowBankSS{
+    margin-top: 20px;
+    width: 450px;
+    height: 300px;
+    transform: translateX(-3%);
+  }
+
+  #ShadowBankLinks{
+    height:65px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(5%);
+  }
+
+  #gameplayLink2{
+    width: 180px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    transition: background-color 0.3s;
+    margin-bottom: 0px;
+    transform: translateX(0%)translateY(0%);
+  }
+  
+  #websiteSBS{
+    width: 160px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    transition: background-color 0.3s;
+    margin-bottom: 0px;
+    transform: translateX(0%)translateY(0%);
+  }
+
+  #gameplayLink2:hover{
+    background-color: #000000;
+    color: #ffffff;
+  }
+  #websiteSBS:hover{
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  #AuraSection{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  #TextAura{
+    width: 400px;
+  }
+
+  #TAPIcon{
+    transform: translateX(-40%);
+    width: 100px;
+    margin-right: 0px;
+  }
+  
+  #TAPSS{
+    margin-top: 20px;
+    width: 450px;
+    height: 320px;
+    transform: translateX(-5%);
+  }
+  
+  #h2P3{
+    font-size: 30px;
+    transform: translateX(-10%);
+  }
+
+  #AuraLinks{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(5%);
+  }
+  
+  #auraPLink:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  #repoLinkAura:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  #auraPLink{
+    width: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-top: 0;
+  }
+
+  #repoLinkAura{
+    width: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-top: 0;
+    margin-left: 40px;
+    text-align: center;
+  }
+
+  #ARSection{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #ARIcon{
+    transform: translateX(-40%);
+    width: 100px;
+    margin-right: 0px;
+  }
+  
+  #h2P4{
+    font-size: 30px;
+    text-align: left;
+    transform: translateX(-5%);
+  }
+  
+  #ARSS{
+    margin-top: 20px;
+    width: 460px;
+    height: 350px;
+    transform: translateX(-5%);
+  }
+  
+  #ARlinks{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(3%);
+  }
+  
+  #feidLink{
+    width: 350px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-top: 0;
+  }
+  
+  #feidLink:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  #URSection{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  #h2P5{
+    font-size: 30px;
+    text-align: left;
+    transform: translateX(-5%);
+  }
+
+  #URIcon{
+    transform: translateX(-40%);
+    width: 100px;
+    margin-right: 0px;
+  }
+
+  #URSS{
+    margin-top: 20px;
+    width: 450px;
+    height: 345px;
+    transform: translateX(-4%);
+  }
+
+  #URLinks{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(3%);
+  }
+
+  #gameplayLink5:visited {
+    color: #000000; 
+  }
+  #gameplayLink5:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  #repoLinkUR:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  #gameplayLink5{
+    width: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-top: 0;
+  }
+
+  #repoLinkUR{
+    width: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-top: 0;
+    margin-left: 40px;
+    text-align: center;
+  }
+  
+  
+  
+
+  #h2P1{
+    font-size: 30px;
+    transform: translateX(-10%);
+  }
+
+  #h2PJ{
+    font-size: 40px;
+    transform: translateX(5%);
+  }
+
+
+
+  #pPJ{
+    width: 500px;
+    font-size: 20px;
+    text-align: left;
+    transform: translateX(-8%);
+  }
+
+  #pPJinfo{
+    color: #979797;
+    width: 500px;
+    font-size: 20px;
+    text-align: left;
+    transform: translateX(-8%);
+  }
+
+  #footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    bottom: 0;
+    transform: translateX(10%)translateY(950%);
+    width: 450px;
+    margin-bottom: 10px;
+  }
+  
+
+  .progress-bar {
+    margin-top: 10px;
+  }
+
+  .progress {
+    line-height: 15px;
+  }
+
+  #Contact{
+    width: 300px;
+    display: none;
+    transform: translateX(55%)translateY(270%);
+  }
+  
+  #h2CM{
+    transform: translateX(-3%);
+    font-size: 40px;
+    color: #1DA1F2;
+  }
+  #pCM{
+    font-size: 20px;
+    transform: translateX(-25%);
+    color: white;
+  }
+  
+  #TextCM{
+    transform: translateX(4%);
+  }
+  
+  #mailto{
+    transform: translateY(40%);
+    text-align: center;
+    width: 150px;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-top: 0;
+  }
+  
+  #mailto:visited {
+    color: #000000; 
+  }
+  #mailto:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+}
+
