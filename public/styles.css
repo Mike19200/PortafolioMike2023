@@ -4,6 +4,15 @@ body {
   overflow-x: hidden;
 }
 
+h2 {
+  font-weight: normal;
+  color: #fff;
+  font-size: 20px;
+}
+
+a{
+  font-weight: lighter;
+}
 
 /* Estilo del encabezado tipo Twitter */
 .header {
@@ -55,6 +64,7 @@ body {
   font-size: 15px;
   gap: 20px;
   width: 500px;
+  z-index: 3;
 }
 
 #locationTxt{
@@ -64,6 +74,7 @@ body {
 }
 
 #nameTxt{
+  font-size: 40px;
   color: rgb(255, 255, 255);
   margin: 0;
   width: 500px;
@@ -124,7 +135,7 @@ body {
 .menu ul li a {
   text-decoration: none;
   color: #1DA1F2;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -266,6 +277,7 @@ a:link {
   border: 1px solid #ffffff;
   text-decoration: none;
   border-radius: 10px;
+  font-weight: normal;
   transition: background-color 0.3s;
   margin-top: 0;
 }
@@ -282,6 +294,7 @@ a:visited {
   border: 1px solid #ffffff;
   text-decoration: none;
   border-radius: 10px;
+  font-weight: normal;
   transition: background-color 0.3s;
   margin-top: 0;
   margin-left: 40px;
@@ -322,6 +335,7 @@ a:visited {
 }
 #gameplayLink2{
   width: 160px;
+  font-weight: normal;
   display: inline-block;
   padding: 10px 20px;
   color: #000000;
@@ -338,6 +352,7 @@ a:visited {
 #websiteSBS{
   width: 150px;
   display: inline-block;
+  font-weight: normal;
   padding: 10px 20px;
   color: #000000;
   background-color: white;
@@ -408,6 +423,7 @@ a:visited {
   text-decoration: none;
   border: 1px solid #ffffff;
   border-radius: 10px;
+  font-weight: normal;
   transition: background-color 0.3s;
   margin-top: 0;
 }
@@ -419,6 +435,7 @@ a:visited {
   color: #000000;
   background-color: white;
   text-decoration: none;
+  font-weight: normal;
   border: 1px solid #ffffff;
   border-radius: 10px;
   transition: background-color 0.3s;
@@ -463,6 +480,7 @@ a:visited {
   display: inline-block;
   padding: 10px 20px;
   color: #000000;
+  font-weight: normal;
   background-color: white;
   text-decoration: none;
   border: 1px solid #ffffff;
@@ -527,6 +545,7 @@ a:visited {
   padding: 10px 20px;
   color: #000000;
   background-color: white;
+  font-weight: normal;
   text-decoration: none;
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -541,6 +560,7 @@ a:visited {
   color: #000000;
   background-color: white;
   text-decoration: none;
+  font-weight: normal;
   border: 1px solid #ffffff;
   border-radius: 10px;
   transition: background-color 0.3s;
