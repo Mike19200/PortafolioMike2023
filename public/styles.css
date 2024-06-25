@@ -21,11 +21,11 @@ a{
   background-image:url("imgs/pxfuel (1).jpg");
   background-size: cover;
   color: #ffffff;
-  padding: 20px;
-  height: 150px;
-  width: 500px;
+  
+  height: 250px;
+  width: 600px;
   position: absolute;
-  left: 50%;
+  left: 50.5%;
   transform: translateX(-50%); 
   top: 2%; 
 }
@@ -33,7 +33,7 @@ a{
 #profilePic{
   width: 150px;
   position: absolute; /* Coloca la foto de perfil en una posición absoluta dentro del encabezado */
-  left: 20px; /* Ajusta la posición izquierda para superponer el banner */
+  left: 5%; /* Ajusta la posición izquierda para superponer el banner */
   top: 130%; /* Centra verticalmente la foto de perfil */
   transform: translateY(-90%); /* Corrige la alineación vertical */
   border: 4px solid #000000; /* Borde blanco alrededor de la foto de perfil */
@@ -41,11 +41,18 @@ a{
   overflow: hidden; /* Recorta cualquier parte de la foto de perfil que se salga del borde */
 }
 
-#infoTxt{
+#Mantenimiento {
+  display: none; 
+}
+
+#infoTxt {
   width: 500px;
   display: flex;
   flex-direction: column;
-  transform: translateY(128%) translateX(90%);
+  position: absolute; /* Asegura que 'left' funcione */
+  /*transform: translateY(128%) translateX(90%);*/
+  left: 37%;
+  top: 38%;
 }
 
 #bioTxt{
@@ -98,8 +105,8 @@ a{
   height: 150px;
   width: 600px;
   position: absolute;
-  left: 50%;
-  transform: translateX(-38%) translateY(190%);
+  left: 38.3%;
+  top: 60%;
   z-index: 2; 
 }
 
@@ -142,12 +149,16 @@ a{
 
 /* Estilo de las secciones */
 
-#AboutMe{
+#AboutMe {
   display: block;
-  color: white; 
-  transform: translateX(0%)translateY(37%);
+  color: white;
+  position: absolute; /* Asegura que 'left' funcione */
+  left: 37%;
+  top: 65%;
   text-align: center;
 }
+
+
 
 #h2AM{
   font-size: 40px;
@@ -159,7 +170,6 @@ a{
   width: 500px;
   font-size: 20px;
   text-align: left;
-  transform: translateX(90%);
 }
 
 #h2EX{
@@ -179,7 +189,6 @@ a{
 #h2TEX{
   font-size: 25px;
   text-align: left;
-  transform: translateX(31.5%);
 }
 #h2AH{
   font-size: 40px;
@@ -189,7 +198,6 @@ a{
   width: 500px;
   font-size: 20px;
   text-align: left;
-  transform: translateX(90%);
 }
 #pEX{
   width: 500px;
@@ -201,13 +209,19 @@ a{
 #proyectos{
   display: none;
   color: white; 
-  transform: translateX(1%)translateY(10%);
+  position: absolute;
   text-align: center;
+  left: 14%;
+  top: 65%;
 }
+
+
 
 #h2PJ{
   font-size: 40px;
   color: #1DA1F2 ;
+  transform: translateX(90%);
+
 }
 
 #pPJ{
@@ -240,7 +254,7 @@ a{
   margin-top: 20px;
   width: 450px;
   height: 340px;
-  transform: translateX(-5%);
+  transform: translateX(100%);
 }
 
 #h2P1{
@@ -252,7 +266,7 @@ a{
   margin-top: 50px;
   display: flex;
   flex-direction: row;
-  transform: translateX(34%);
+  transform: translateX(100%);
 }
 
 #gameplayLink1:hover {
@@ -318,7 +332,7 @@ a:visited {
   margin-top: 20px;
   width: 450px;
   height: 300px;
-  transform: translateX(-6%);
+  transform: translateX(100%);
 }
 
 #h2P2{
@@ -331,7 +345,7 @@ a:visited {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
-  transform: translateX(33%);
+  transform: translateX(100%);
 }
 #gameplayLink2{
   width: 160px;
@@ -389,7 +403,7 @@ a:visited {
   margin-top: 20px;
   width: 500px;
   height: 330px;
-  transform: translateX(-5%);
+  transform: translateX(90%);
 }
 
 #h2P3{
@@ -401,7 +415,7 @@ a:visited {
   margin-top: 80px;
   display: flex;
   flex-direction: row;
-  transform: translateX(34%);
+  transform: translateX(100%);
 }
 
 #auraPLink:hover {
@@ -465,14 +479,14 @@ a:visited {
   margin-top: 20px;
   width: 460px;
   height: 350px;
-  transform: translateX(-5%);
+  transform: translateX(95%);
 }
 
 #ARlinks{
   margin-top: 40px;
   display: flex;
   flex-direction: row;
-  transform: translateX(34%);
+  transform: translateX(96%);
 }
 
 #feidLink{
@@ -523,7 +537,7 @@ a:visited {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
-  transform: translateX(34%);
+  transform: translateX(100%);
 }
 
 #gameplayLink5:visited {
@@ -572,16 +586,19 @@ a:visited {
 #h2MS{
   font-size: 40px;
   color: #1DA1F2;
-  transform: translateX(45%)translateY(700%);
+  transform: translateX(42%)translateY(665%);
 }
 
 #Skills{
   display: none;
   color: white;
+  position: absolute;
+  top: 32%;
+  left: 36%;
 }
 
 #MySkills{
-  transform: translateX(34%)translateY(38%);
+  transform: translateX(10%)translateY(30%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -667,7 +684,9 @@ a:visited {
 #Contact{
   width: 450px;
   display: none;
-  transform: translateX(135%)translateY(200%);
+  position: absolute;
+  left: 45%;
+  top: 67%;
 }
 
 #h2CM{
@@ -710,17 +729,17 @@ a:visited {
 
 /* Estilo del pie de página */
 #footer {
-  margin-top: 20px;
   text-align: center;
   background-color: #000000;
   color: #ffffff;
-  bottom: 0;
-  transform: translateX(93%)translateY(800%);
-  width: 500px;
-  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px 0;
+  position: fixed; /* Fixed footer at the bottom */
+  bottom: 0; /* Stick to the bottom */
+  left: 0; /* Span full width */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   .body{
     overflow-x: hidden;
@@ -731,7 +750,8 @@ a:visited {
     background-color: #1DA1F2;
     color: #ffffff;
     padding: 20px;
-    height: 250px;
+    height: 450px;
+    width: 1000px;
     transform: translateX(0);
     position: absolute;
     left: 0; 
@@ -742,72 +762,90 @@ a:visited {
     display: flex;
     flex-direction: column;
     margin-top: 2%;
-    transform: translateY(175%)translateX(3%);
+    transform: translateY(80%)translateX(-20%);
   }
   
 
   #nameTxt{
-    font-size: 30px;
+    font-size: 70px;
     text-align: left;
     margin-bottom: 1%;
+    height: 50px;
+    width: 900px;
   }
 
   #userTxt{
-    font-size: 20px;
+    font-size: 30px;
   }
 
   #bioTxt{
     color: rgb(177, 175, 175);
-    font-size: 20px;
+    font-size: 40px;
+    margin-top: 10%;
     margin-bottom: 1%;
   }
 
   #profilePic{
     left: 20px;
+    height: 350px;
+    width: 350px;
   }
 
   #locationTxt{
-    font-size: 20px;
+    font-size: 30px;
   }
 
-  .menu{
+  .menu {
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
     left: 0;
-    transform: translateX(7%)translateY(260%);
-  }
+    transform: translateX(50%) translateY(450%);
+    text-align: center; /* Asegura que los elementos se centren en la línea */
+}
 
-  .menu .line {
-    margin-top: 15px;
-    transform: translateX(-2%);
-    height: 1px;
+.menu .line {
+    transform: translateX(-15%);
+    height: 5px;
     background-color: #1DA1F2;
-    width: 500px;
+    width: 900px;
     margin-bottom: 10px;
-  }
+    margin: 0 auto; /* Centra la línea horizontal */
+}
 
-  .menu ul li {
-    display: inline;
+.menu ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    display: inline-block; /* Permite centrar la lista horizontalmente */
+}
+
+.menu ul li {
+    display: inline-block; /* Asegura que los elementos estén en línea horizontal */
     text-align: center;
     margin-right: 20px;
     border-right: 1px solid #1DA1F2; /* Borde a la derecha de los elementos de la lista */
     padding-right: 20px; /* Espacio entre los elementos y los bordes */
-  }
+    font-size: 30px;
+}
+
+.menu ul li:last-child {
+    border-right: none; /* Elimina el borde del último elemento */
+    padding-right: 0; /* Elimina el padding del último elemento */
+}
 
   #AboutMe{
     color: white; 
-    transform: translateX(15%)translateY(45%);
+    transform: translateX(-10%)translateY(40%);
     text-align: center;
   }
 
   #h2AM{
-    font-size: 40px;
-    transform: translateX(-38%);
+    font-size: 60px;
+    transform: translateX(-30%);
     color: #1DA1F2 ;
   }
 
   #h2MS{
-    font-size: 40px;
+    font-size: 60px;
     transform: translateX(18%)translateY(930%);
     color: #1DA1F2 ;
   }
@@ -827,10 +865,10 @@ a:visited {
   }
 
   #pAM{
-    width: 500px;
-    font-size: 20px;
+    width: 600px;
+    font-size: 30px;
     text-align: left;
-    transform: translateX(-8%);
+    transform: translateX(0%);
   }
 
   #AMSection, #proyectos {
@@ -838,26 +876,25 @@ a:visited {
   }
 
   #h2EX{
-    font-size: 40px;
+    font-size: 60px;
     color: #1DA1F2 ;
-    transform: translateX(-36%);
+    transform: translateX(-30%);
   }
   #h2TEX{
-    font-size: 25px;
+    font-size: 35px;
     text-align: left;
-    transform: translateX(-11%);
+    transform: translateX(0%);
   }
   #h2AH{
-    font-size: 40px;
-    text-align: left;
+    font-size: 60px;
     color: #1DA1F2 ;
-    transform: translateX(-11%);
+    transform: translateX(30%);
   }
   #pTEX{
-    width: 500px;
-    font-size: 20px;
+    width: 600px;
+    font-size: 30px;
     text-align: left;
-    transform: translateX(-8%);
+    transform: translateX(0%);
   }
   #pEX{
     width: 500px;
@@ -939,7 +976,7 @@ a:visited {
     text-align: center;
   }
 
- 
+
   #ShadowBankSection{
     margin-top: 90px;
     display: flex;
@@ -1300,5 +1337,26 @@ a:visited {
     color: #ffffff;
   }
 
+  #Mantenimiento {
+    display: block; /* Mostrar en móviles */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0); /* Fondo blanco o el que desees */
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+    text-align: center; /* Centra el contenido */
+  }
+
+  #MaintancePic {
+    max-width: 100%;
+    max-height: 150%;
+    object-fit: contain;
+  }
 }
+
+
+
+
 
